@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/choices.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/choices.min.js"></script>
+    <title>Blanchard</title>
+  </head>
+  <body>
+    <header class="header swiper">
+      <!-- <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+      <nav class="container header__nav nav">
+        <div class="nav__logo">
+          <a href="index.html"><img src="img/icons/logo.svg" alt="" /></a>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Галерея</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">События</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Издания</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+        <a class="nav__btn-link nav__btn-icon">Войти</a>
+      </nav>
+      <nav class="container header__menu menu">
+        <br /><br />
+
+        <span class="custom-dropdown">
+          <select>
+            <option class="head-select">Реализм</option>
+            <option class="dropdown">Верроккьо</option>
+            <option class="dropdown">Леонардо</option>
+            <option class="dropdown">Фридрих</option>
+            <option class="dropdown">Тинторетто</option>
+          </select>
+        </span>
+        <span class="custom-dropdown">
+          <select>
+            <option class="head-select">Импрессионизм</option>
+            <option class="dropdown">Ренуар</option>
+            <option class="dropdown">Мане</option>
+            <option class="dropdown">Сислей</option>
+            <option class="dropdown">Моне</option>
+          </select>
+        </span>
+
+        <span class="custom-dropdown">
+          <select>
+            <option class="head-select">Постимпрессионизм</option>
+            <option class="dropdown">Сёра</option>
+            <option class="dropdown">Гоген</option>
+            <option class="dropdown">Сезанн</option>
+            <option class="dropdown">Ван Гог</option>
+          </select>
+        </span>
+
+        <span class="custom-dropdown">
+          <select>
+            <option class="head-select">Авангард</option>
+            <option class="dropdown">Пикассо</option>
+            <option class="dropdown">Малевич</option>
+            <option class="dropdown">Маринетти</option>
+            <option class="dropdown">Кандинский</option>
+          </select>
+        </span>
+
+        <span class="custom-dropdown">
+          <select>
+            <option class="head-select">Футуризм</option>
+            <option class="dropdown">Балла</option>
+            <option class="dropdown">Северини</option>
+            <option class="dropdown">Прателла</option>
+            <option class="dropdown">Карра</option>
+          </select>
+        </span>
+
+        <!-- <select name="select" class="menu__select">
+          <option value="0" class="menu__select-first">Реализм</option>
+          <option value="1">Верроккьо</option>
+          <option value="2">Леонардо</option>
+          <option value="3">Фридрих</option>
+          <option value="3">Тинторетто</option>
+        </select>
+        <select name="select" class="menu__select">
+          <option value="0" class="menu__select-first">Импрессионизм</option>
+          <option value="1">Ренуар</option>
+          <option value="2">Мане</option>
+          <option value="3">Сислей</option>
+          <option value="3">Моне</option>
+        </select>
+        <select name="select" class="menu__select">
+          <option value="0" class="menu__select-first">
+            Постимпрессионизм
+          </option>
+          <option value="1">Сёра</option>
+          <option value="2">Гоген</option>
+          <option value="3">Сезанн</option>
+          <option value="3">Ван Гог</option>
+        </select>
+        <select name="select" class="menu__select">
+          <option value="0" class="menu__select-first">Авангард</option>
+          <option value="1">Пикассо</option>
+          <option value="2">Малевич</option>
+          <option value="3">Маринетти</option>
+          <option value="3">Кандинский</option>
+        </select>
+        <select name="select" class="menu__select">
+          <option value="0" class="menu__select-first">Футуризм</option>
+          <option value="1">Балла</option>
+          <option value="2">Северини</option>
+          <option value="3">Прателла</option>
+          <option value="3">Карра</option>
+        </select> -->
+        <form
+          action="https://jsonplaceholder.typicode.com/posts"
+          class="menu__search"
+        >
+          <button title="Найти" class="menu__icon"></button>
+          <input type="text" placeholder="Поиск по сайту" class="menu__input" />
+        </form>
+      </nav>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--first">slide 1</div>
+        <div class="swiper-slide swiper-slide--second">slide 2</div>
+        <div class="swiper-slide swiper-slide--third">slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <h1 class="header-content__title">Прикоснитесь к прекрасному</h1>
+      <p class="header-content__desc">
+        Мы вынуждены отталкиваться от того, что реализация намеченных плановых
+        заданий создаёт предпосылки для новых предложений.
+      </p>
+      <button class="header__btn btn">Подписаться на рассылку</button>
+    </header>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/choices.min.js"></script>
+    <script>
+      const elements = Array.from(document.querySelectorAll(".menu__select"));
+
+      const instances = elements.map((element) => {
+        return new Choices(element, {
+          searchEnabled: false,
+          placeholder: false,
+        });
+      }); -->
+  </body>
+</html>

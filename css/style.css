@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  min-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.header {
+  background-image: url(../img/image/header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 800px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100px;
+  background-color: #000;
+}
+
+.nav__list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 65px;
+}
+
+.nav__link {
+  font-size: 18px;
+  color: #fff;
+}
+
+.nav__btn-link {
+  margin-left: auto;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav__btn-icon {
+  padding-left: 20px;
+  background-image: url(../img/icons/login.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: inherit;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  /* padding-top: 23px; */
+  margin-bottom: 63px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.select {
+  margin: 0 auto;
+  position: relative;
+  width: 250px;
+}
+
+.choices {
+  margin-bottom: 0;
+}
+
+.choices:not(:last-child) {
+  margin-right: 107px;
+}
+
+.choices__inner {
+  padding: 0;
+  min-height: 0;
+  border: none;
+  background: inherit;
+  color: #fff;
+  font-size: 16px;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 0;
+}
+
+.choices__list--single {
+  padding: 0;
+  padding-right: 16px;
+}
+
+.choices__list--dropdown.is-active {
+  background: inherit;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.choices[data-type*="select-one"]:after {
+  width: 13px;
+  height: 10px;
+  /* margin-top: 2.5px; */
+  border-style: none;
+  background-image: url(../img/icons/menu__arrow.svg);
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  width: 300px;
+  height: 300px;
+  background-color: inherit;
+}
+
+.choices__placeholder {
+  display: none;
+}
+
+.choices__list--dropdown .choices__item {
+  padding-top: 14px;
+  padding-left: 4px;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+}
+
+span:first-child {
+  margin-right: 0;
+}
+
+.custom-dropdown select {
+  background-color: inherit;
+  color: #fff;
+  font-size: inherit;
+  padding: 0.5em;
+  padding-right: 2.5em;
+
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  cursor: pointer;
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown select:first-child {
+  padding-left: 0;
+}
+
+.head-select {
+  display: none;
+}
+
+option {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/image/bg-select.png);
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.custom-dropdown::after {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.menu__search {
+  margin-left: 300px;
+}
+
+.menu__icon {
+  background: inherit;
+  background-image: url(../img/icons/search.svg);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__input {
+  background-color: inherit;
+  border: none;
+  border-bottom: solid 1px #fff;
+  color: #fff;
+  outline: none;
+}
+
+.menu__input::placeholder {
+  color: #fff;
+}
+
+.swiper {
+  width: 1920px;
+  height: 730px;
+}
+
+.swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide--first {
+  background-image: url(../img/image/slide1.jpg);
+}
+
+.swiper-slide--second {
+  background-image: url(../img/image/slide2.png);
+}
+
+.swiper-slide--third {
+  background-image: url(../img/image/slide3.png);
+}
+
+.header-content__title {
+  margin: 0 1234px 0 160px;
+  color: #fff;
+  font-size: 72px;
+}
+
+.header-content__desc {
+  margin: 0 1270px 92px 160px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.header__btn {
+  margin-left: 160px;
+  padding: 22.5px 35px;
+  border: 1px solid #9d5cd0;
+  border-radius: 100px;
+  background-color: #9d5cd0;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
